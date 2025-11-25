@@ -29,7 +29,7 @@ export default async function Code({
   return (
     <div
       className={cn(
-        "no-scroll-bar px-3 [&_code]:font-mono [&_code]:text-sm [&_pre]:overflow-auto [&_pre]:leading-snug",
+        "no-scroll-bar px-3 [&_code]:font-mono [&_code]:text-[15px] [&_pre]:overflow-auto [&_pre]:leading-snug",
         heightAuto ? "h-auto" : "h-[calc(100svh-260px)]",
       )}
       // biome-ignore lint/security/noDangerouslySetInnerHtml: <Shiki>

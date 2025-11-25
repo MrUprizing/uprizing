@@ -1,6 +1,6 @@
-import fs from "fs";
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
-import path from "path";
 
 interface PostMetadata {
   title: string;
@@ -26,14 +26,16 @@ export default async function Page({
 
   return (
     <div>
-      <header className="mb-8 border-b pb-6">
-        <div className="flex gap-4 text-sm text-muted-foreground">
+      <header className="mb-8 pb-6">
+        <div className="flex gap-4 text-sm font-mono text-muted-foreground">
           {metadata.date && <time>{metadata.date}</time>}
         </div>
         <div className="font-extrabold text-2xl">{metadata.title}</div>
-
         {metadata.description && (
-          <p className="text-muted-foreground mt-3">{metadata.description}</p>
+          <p className="text-muted-foreground mt-3 ">{metadata.description}</p>
+        )}
+        {metadata.author && (
+          <p className=" mt-1 text-xs font-mono">By: {metadata.author}</p>
         )}
       </header>
       <Post metadata={metadata} />
@@ -68,7 +70,7 @@ export async function generateMetadata({
         description: postMeta.description || "",
       },
     };
-  } catch (error) {
+  } catch (_error) {
     return {
       title: slug,
       description: "Blog post",

@@ -1126,6 +1126,93 @@ export function IconVercel({ size = "20px", ...props }: IconProps) {
   );
 }
 
+export function IconZod({ size = "20px", ...props }: IconProps) {
+  return (
+    <svg
+      width="256"
+      height="256"
+      viewBox="0 0 256 256"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      id="zod"
+      {...props}
+    >
+      <style></style>
+      <rect width="256" height="256" rx="40" fill="#15191C" />
+      <path
+        d="M73.2176 62C66.1319 62 59.8026 66.4312 57.3786 73.0897L39.0176 123.519C36.6272 130.087 38.5363 137.448 43.8183 142.025L118.027 206.332C124.418 211.87 133.922 211.816 140.249 206.206L212.326 142.299C217.486 137.723 219.339 130.467 217.003 123.978L198.708 73.148C196.301 66.4595 189.957 62 182.849 62H73.2176Z"
+        fill="url(#linearGradient1)"
+      />
+      <path
+        d="M79.3405 151.269L107.405 175.755L192.797 121.592C196.458 119.129 197.977 114.493 196.483 110.341L187.543 85.5029L79.3405 151.269Z"
+        fill="url(#linearGradient2)"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M187.181 84.4981L196.267 109.741H59.6461L68.8513 84.4584C70.4965 79.9402 74.7754 76.9201 79.5835 76.8833H176.26C181.147 76.8464 185.526 79.8993 187.181 84.4981Z"
+        fill="white"
+      />
+      <path
+        d="M79.3405 151.269L122.383 188.823C125.812 191.815 130.93 191.795 134.336 188.777L176.658 151.269H79.3405Z"
+        fill="url(#linearGradient3)"
+      />
+      <linearGradient
+        id="linearGradient1"
+        x1="127.999"
+        y1="210.495"
+        x2="127.999"
+        y2="62.0004"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#3A6AFF" />
+        <stop offset="1" stopColor="#45A9FF" />
+      </linearGradient>
+      <linearGradient
+        id="linearGradient2"
+        x1="205.21"
+        y1="64.1971"
+        x2="72.6598"
+        y2="134.909"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#D6E9FF" />
+        <stop offset="1" stopColor="#6EA0FF" />
+      </linearGradient>
+      <linearGradient
+        id="linearGradient3"
+        x1="79.3406"
+        y1="171.162"
+        x2="176.658"
+        y2="171.162"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#A7C5FF" />
+      </linearGradient>
+    </svg>
+  );
+}
+
+export function IconResend({ size = "20px", ...props }: IconProps) {
+  return (
+    <svg
+      width="256"
+      height="256"
+      viewBox="0 0 256 256"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <rect width="256" height="256" rx="40" fill="black" />
+      <path
+        d="M73 200.33V56H137.949C147.158 56 155.474 57.9933 162.897 61.9793C170.457 65.9654 176.368 71.4638 180.629 78.4744C184.89 85.3469 187.021 93.1823 187.021 101.979C187.021 111.051 184.89 119.23 180.629 126.515C176.368 133.663 170.526 139.299 163.103 143.422C155.681 147.546 147.295 149.608 137.949 149.608H106.402V200.33H73ZM153 200.33L116.299 135.175L152.175 130.021L193 200.33H153ZM106.402 122.804H134.856C138.43 122.804 141.522 122.048 144.134 120.536C146.883 118.886 148.945 116.619 150.319 113.732C151.832 110.845 152.588 107.546 152.588 103.835C152.588 100.124 151.763 96.8934 150.113 94.1443C148.464 91.2579 146.058 89.0585 142.897 87.5462C139.873 86.0344 136.161 85.2785 131.763 85.2785H106.402V122.804Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
+
 export function IconV0({ size = "20px", ...props }: IconProps) {
   return (
     <svg

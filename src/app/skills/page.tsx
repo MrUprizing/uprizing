@@ -1,53 +1,48 @@
 import {
-  IconGo,
-  IconTypescript,
-  IconSST,
-  IconPulumi,
+  IconAnthropic,
   IconAWS,
-  IconPostgres,
-  IconRedis,
-  IconDynamo,
+  IconBedrock,
+  IconBetterAuth,
+  IconBun,
+  IconClaude,
+  IconCloudinary,
+  IconDocker,
   IconDrizzle,
-  IconPrisma,
+  IconDynamo,
+  IconEcho,
+  IconElysia,
+  IconFiber,
+  IconFirecrawl,
+  IconGcp,
+  IconGitHub,
+  IconGo,
   IconGorm,
-  IconZed,
+  IconHono,
+  IconKubernetes,
+  IconMistral,
+  IconNeon,
   IconNextjs,
+  IconNode,
+  IconPostgres,
+  IconPrisma,
+  IconPulumi,
+  IconRedis,
+  IconResend,
+  IconShadcn,
+  IconSql,
+  IconSST,
+  IconSupabase,
   IconSvelte,
   IconTailwind,
-  IconSql,
-  IconEcho,
-  IconFiber,
-  IconBetterAuth,
-  IconShadcn,
-  IconHono,
-  IconElysia,
-  IconVercel,
-  IconClaude,
-  IconNode,
-  IconBun,
   IconTurbo,
-  IconMistral,
-  IconAnthropic,
-  IconBedrock,
-  IconDocker,
-  IconKubernetes,
-  IconGitHub,
-  IconGcp,
-  IconSupabase,
-  IconCloudinary,
-  IconNeon,
+  IconTypescript,
   IconUpstash,
-  IconFirecrawl,
   IconV0,
+  IconVercel,
+  IconZed,
+  IconZod,
 } from "@/assets";
-import {
-  ContainerLinks,
-  Description,
-  MyBadge,
-  Subtitle,
-} from "@/components/typography";
-import { Badge } from "@/components/ui/badge";
-import { Link } from "next-view-transitions";
+import { Description, MyBadge } from "@/components/typography";
 
 export default function Home() {
   return (
@@ -55,9 +50,9 @@ export default function Home() {
       <div className="w-full max-w-3xl flex flex-col">
         <div className="flex items-baseline">
           <div className="title-transition font-doto font-extrabold text-2xl">
-            SKILLSㅤ
+            SKILLS
           </div>
-          <div className="font-mono font-normal text-sm text-muted hover:text-primary transition-colors duration-200">
+          <div className="font-mono ml-4 font-normal text-sm text-muted hover:text-primary transition-colors duration-200">
             Which I use? See below
           </div>
         </div>
@@ -80,10 +75,28 @@ export default function Home() {
           <MyBadge icon={IconSvelte} title="Svelte" /> with{" "}
           <MyBadge icon={IconTailwind} title="Tailwind" /> CSS.
         </Description>
+        {/*<DatabaseWithRestApi />*/}
         <Description className="pt-4">
           At last, but not least, I use <MyBadge icon={IconZed} title="Zed" />{" "}
           IDE for creating awesome projects.
         </Description>
+        {/*<div className="my-6">
+          <GlowingKeyboard
+            glowColor="#38bdf8"
+            highlight={[
+              {
+                startRow: 2,
+                startIndex: 1,
+                text: ["F", "O", "L", "L", "O", "W", "", "M", "E"],
+              },
+              {
+                startRow: 3,
+                startIndex: 2,
+                text: ["U", "P", "R", "I", "Z", "I", "N", "G"],
+              },
+            ]}
+          />
+        </div>*/}
         <h3 className="text-muted-foreground pt-4">{`<Core/>`}</h3>
         <div className="pt-2 flex gap-2">
           <MyBadge icon={IconTypescript} title="TypeScript" />
@@ -100,14 +113,16 @@ export default function Home() {
           <MyBadge icon={IconElysia} title="ElysiaJs" />
           <MyBadge icon={IconEcho} title="Echo" />
           <MyBadge icon={IconFiber} title="Fiber" />
-          <MyBadge icon={IconBetterAuth} title="Better Auth ❤️" />
+          <MyBadge icon={IconZod} title="Zod ❤️" />
           <MyBadge icon={IconShadcn} title="Shadcn UI" />
           <MyBadge icon={IconNextjs} title="NextJs" />
+          <MyBadge icon={IconBetterAuth} title="Better Auth ❤️" />
           <MyBadge icon={IconSvelte} title="Svelte" />
           <MyBadge icon={IconTailwind} title="Tailwind" />
           <MyBadge icon={IconBun} title="Bun Js ❤️" />
           <MyBadge icon={IconTurbo} title="Turborepo" />
           <MyBadge icon={IconNode} title="Node Js" />
+          <MyBadge icon={IconResend} title="Resend ❤️" />
         </div>
 
         <h3 className="text-muted-foreground pt-4">{`<AI/>`}</h3>
@@ -119,6 +134,7 @@ export default function Home() {
           <MyBadge icon={IconV0} title="V0 & Api❤️" />
           <MyBadge icon={IconBedrock} title="AWS Bedrock" />
           <MyBadge icon={IconClaude} title="Claude Code" />
+          <MyBadge icon={IconVercel} title="Vercel AI Gateway" />
         </div>
 
         <h3 className="text-muted-foreground pt-4">{`<Dev Ops/>`}</h3>

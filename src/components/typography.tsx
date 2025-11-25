@@ -219,7 +219,7 @@ const CodeBlock = async ({
       <header className="flex flex-wrap items-center justify-between px-4 py-0.5 bg-card border-b rounded-t-xl">
         <div className="flex items-center gap-2">
           <IconCodeEditor />
-          <h3 className="font-medium text-base font-mono">{name}</h3>
+          <h3 className="font-medium text-sm font-mono">{name}</h3>
         </div>
 
         <CopyButton code={code} />

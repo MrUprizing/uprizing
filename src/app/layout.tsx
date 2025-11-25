@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { ViewTransitions } from "next-view-transitions";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,13 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${doto.variable} text-sm leading-6 sm:text-[15px] sm:leading-7 md:text-base md:leading-7 antialiased`}
+          // className={`${geistSans.variable} ${geistMono.variable} ${doto.variable} text-sm leading-6 sm:text-[15px] sm:leading-7 md:text-base md:leading-7 antialiased`}
+          className={cn(
+            geistMono.variable,
+            geistSans.variable,
+            doto.variable,
+            "antialiased font-sans text-sm leading-6 sm:text-[15px] sm:leading-7 md:text-base md:leading-7",
+          )}
         >
           <ThemeProvider
             attribute="class"

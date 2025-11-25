@@ -1,65 +1,62 @@
-import {
-  Timeline,
-  TimelineContent,
-  TimelineDate,
-  TimelineHeader,
-  TimelineIndicator,
-  TimelineItem,
-  TimelineSeparator,
-  TimelineTitle,
-} from "@/components/ui/timeline";
-
-const items = [
-  {
-    id: 1,
-    date: "Mar 15, 2024",
-    title: "Project Kickoff",
-    description:
-      "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-  },
-  {
-    id: 2,
-    date: "Mar 22, 2024",
-    title: "Design Phase",
-    description:
-      "Completed wireframes and user interface mockups. Stakeholder review and feedback incorporated.",
-  },
-  {
-    id: 3,
-    date: "Apr 5, 2024",
-    title: "Development Sprint",
-    description:
-      "Backend API implementation and frontend component development in progress.",
-  },
-  {
-    id: 4,
-    date: "Apr 19, 2024",
-    title: "Testing & Deployment",
-    description:
-      "Quality assurance testing, performance optimization, and production deployment preparation.",
-  },
-];
+import DatabaseWithRestApi from "@/components/db-ui";
+import TimelineMain from "@/components/timeline-main";
+import TimelineSecondary from "@/components/timeline-secondary";
+import { CustomLink, Description, WhiteSpan } from "@/components/typography";
+import { Separator } from "@/components/ui/separator";
 
 export default function Component() {
   return (
-    <Timeline defaultValue={3}>
-      {items.map((item) => (
-        <TimelineItem
-          key={item.id}
-          step={item.id}
-          className="sm:group-data-[orientation=vertical]/timeline:ms-32"
+    <div>
+      <div className="flex items-baseline">
+        <div className="title-transition font-doto font-extrabold text-2xl">
+          Work
+        </div>
+        <div className="font-mono ml-4 font-normal text-sm text-muted hover:text-primary transition-colors duration-200">
+          My timeline with 22 years old :)
+        </div>
+      </div>
+      <Description>
+        Browse a timeline of my work and projects across the years, including
+        early school creations, personal experiments, professional experience,
+        and key milestones such as winning two hackathons, being invited to{" "}
+        <WhiteSpan>Google’s offices in Colombia</WhiteSpan>, and launching{" "}
+        <CustomLink href="https://auth.uprizing.me/" _blank>
+          {" "}
+          Auth CN,
+        </CustomLink>{" "}
+        which reached{" "}
+        <CustomLink href="https://github.com/MrUprizing/auth-cn">
+          100+ GitHub stars
+        </CustomLink>{" "}
+        and over 600 likes on its announcement{" "}
+        <CustomLink
+          href="https://x.com/MrUprizing/status/1991299770921709622?s=20"
+          _blank
         >
-          <TimelineHeader>
-            <TimelineSeparator />
-            <TimelineDate className="sm:group-data-[orientation=vertical]/timeline:absolute sm:group-data-[orientation=vertical]/timeline:-left-32 sm:group-data-[orientation=vertical]/timeline:w-20 sm:group-data-[orientation=vertical]/timeline:text-right">
-              {item.date}
-            </TimelineDate>
-            <TimelineTitle className="sm:-mt-0.5">{item.title}</TimelineTitle>
-            <TimelineIndicator />
-          </TimelineHeader>
-          <TimelineContent>{item.description}</TimelineContent>
-        </TimelineItem>
-      ))}
-    </Timeline>
+          post on X
+        </CustomLink>{" "}
+        within just three days.
+      </Description>
+      <DatabaseWithRestApi />
+      <div className="flex items-baseline mt-3 mb-5">
+        <div className="title-transition font-doto font-extrabold text-2xl">
+          Principal Timeline
+        </div>
+        <div className="font-mono ml-4 font-normal text-sm text-muted hover:text-primary transition-colors duration-200">
+          My most important milestones
+        </div>
+      </div>
+      <TimelineMain />
+      <Separator className="my-8" />
+      <div className="flex items-baseline mt-3 mb-5">
+        <div className="title-transition font-doto font-extrabold text-2xl">
+          Complete Timeline
+        </div>
+        <div className="font-mono ml-4 font-normal text-sm text-muted hover:text-primary transition-colors duration-200">
+          {"<3"}
+        </div>
+      </div>
+      <TimelineSecondary />
+    </div>
   );
 }

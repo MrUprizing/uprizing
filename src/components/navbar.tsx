@@ -3,7 +3,7 @@
 import cn from "clsx";
 import { usePathname } from "next/navigation";
 import { Link } from "next-view-transitions";
-import { DialogNavbar } from "./dialog-navbar";
+import ThemeToggle from "./theme-toggle";
 
 function Item(props: React.ComponentProps<typeof Link>) {
   const pathname = usePathname();
@@ -38,13 +38,14 @@ function Item(props: React.ComponentProps<typeof Link>) {
 export default function Navbar() {
   return (
     <nav className="sm:mr-6 md:mr-10 lg:mr-14 w-full sm:w-16">
-      <ul className="text-right sm:sticky top-6 md:top-10 lg:top-14 mb-6 sm:mb-0 flex gap-2 justify-end sm:block">
+      <ul className="text-right sm:sticky top-10 md:top-10 lg:top-14 mb-6 sm:mb-0 flex gap-2 justify-end sm:block items-center sm:items-start">
         <Item href="/">About</Item>
         <Item href="/work">Work</Item>
         <Item href="/skills">Skills</Item>
         <Item href="/thoughts">Thoughts</Item>
-        <hr className="border-t border my-4 sm:-mx-1" />
-        <DialogNavbar />
+        <hr className="border-t border-dashed  mb-4 mt-4 sm:-mx-1" />
+        {/*<DialogNavbar />*/}
+        <ThemeToggle />
       </ul>
     </nav>
   );

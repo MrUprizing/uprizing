@@ -117,7 +117,6 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    font-family: var(--font-geist-sans);
   }
   body {
     @apply bg-background text-foreground;
@@ -141,6 +140,18 @@
   .dot-leaders::after {
     content: "······································································";
   }
+}
+
+code {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+code span {
+  color: var(--shiki-light);
+}
+
+.dark code span {
+  color: var(--shiki-dark);
 }
 
 @supports (view-transition-name: none) {
@@ -178,7 +189,22 @@
   }
 }
 
-/*.title-transition {
-  view-transition-name: title-transition;
-  width: fit-content;
-}*/
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
