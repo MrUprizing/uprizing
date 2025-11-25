@@ -42,17 +42,20 @@ export default function RootLayout({
         >
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="light"
+            // enableSystem
             disableTransitionOnChange
           >
             <div className="w-full p-6 sm:p-10 md:p-14">
-              <div className="fixed sm:hidden h-6 sm:h-10 md:h-14 w-full top-0 left-0 z-30 pointer-events-none bg-gradient-to-b from-background to-transparent" />
+              <div className="fixed sm:hidden h-6 sm:h-10 md:h-14 w-full top-0 left-0 z-30 pointer-events-none bg-linear-to-b from-background to-transparent" />
               <div className="flex flex-col sm:flex-row">
                 <Navbar />
                 <main className="relative flex-1 max-w-2xl">
                   <div className="absolute w-full h-px bg-border right-0 sm:right-auto sm:left-0 sm:w-px sm:h-full" />
-                  <article className="pl-0 pt-6 sm:pt-0 sm:pl-6 md:pl-10 lg:pl-14">
+                  <article
+                    style={{ viewTransitionName: "crossfade" }}
+                    className="pl-0 pt-6 sm:pt-0 sm:pl-6 md:pl-10 lg:pl-14"
+                  >
                     {children}
                   </article>
                 </main>

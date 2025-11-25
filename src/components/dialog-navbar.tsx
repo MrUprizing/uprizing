@@ -8,6 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import ThemeToggle from "./theme-toggle";
 
 export function DialogNavbar() {
   const [open, setOpen] = React.useState(false);
@@ -41,6 +42,9 @@ export function DialogNavbar() {
               account and remove your data from our servers.
             </DialogDescription>
           </DialogHeader>
+          <div className="w-min">
+            <ThemeToggle />
+          </div>
         </DialogContent>
       </Dialog>
     </>

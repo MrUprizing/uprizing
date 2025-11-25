@@ -38,12 +38,12 @@ function Item(props: React.ComponentProps<typeof Link>) {
 export default function Navbar() {
   return (
     <nav className="sm:mr-6 md:mr-10 lg:mr-14 w-full sm:w-16">
-      <ul className=" text-right sm:sticky top-6 md:top-10 lg:top-14 mb-6 sm:mb-0 flex gap-2 justify-end sm:block">
+      <ul className="text-right sm:sticky top-6 md:top-10 lg:top-14 mb-6 sm:mb-0 flex gap-2 justify-end sm:block">
         <Item href="/">About</Item>
+        <Item href="/work">Work</Item>
         <Item href="/skills">Skills</Item>
         <Item href="/thoughts">Thoughts</Item>
-        <Item href="/projects">Projects</Item>
-        <hr className="border-t border-dashed border my-4 sm:-mx-1" />
+        <hr className="border-t border my-4 sm:-mx-1" />
         <DialogNavbar />
       </ul>
     </nav>
