@@ -23,7 +23,7 @@ const doto = Doto({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uprizing.me"),
-  title: "UPRIZING",
+  title: "Mr Uprizing",
   description:
     "Back-End Developer focused on cloud technologies and AI-driven solutions. Building scalable, high-performance applications with serverless technologies and cloud architecture.",
   keywords: [
@@ -35,24 +35,24 @@ export const metadata: Metadata = {
     "GitHub",
   ],
   openGraph: {
-    title: "UPRIZING",
+    title: "MrUprizing",
     description:
       "Back-End Developer focused on cloud technologies and AI-driven solutions. Building scalable, high-performance applications with serverless technologies and cloud architecture.",
     url: "/",
-    siteName: "UPRIZING",
+    siteName: "MrUprizing",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "UPRIZING - @MrUprizing",
+        alt: "MrUprizing - @MrUprizing",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "UPRIZING - @MrUprizing",
+    title: "MrUprizing - @MrUprizing",
     description:
       "Back-End Developer focused on cloud technologies and AI-driven solutions.",
     images: ["/og.png"],
