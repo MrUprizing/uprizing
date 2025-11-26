@@ -1,11 +1,8 @@
 import {
   CodeBlock,
-  ContainerLinks,
   Description,
-  Paragraph,
   Subtitle,
   WhiteSpan,
-  Title,
 } from "@/components/typography";
 
 export const metadata = {

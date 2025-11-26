@@ -1,14 +1,8 @@
 import {
   ContainerLinks,
-  CustomLink,
   Description,
   ImageComponent,
-  MyBadge,
-  Paragraph,
-  SubDescription,
   Subtitle,
-  Title,
-  WhiteSpan,
 } from "@/components/typography";
 
 export const metadata = {
