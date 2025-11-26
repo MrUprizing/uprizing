@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://uprizing.me"),
   title: "Mr Uprizing",
   description:
-    "Back-End Developer focused on cloud technologies and AI-driven solutions. Building scalable, high-performance applications with serverless technologies and cloud architecture.",
+    "I like to build things for users and developers, thinking deeply about how the interface looks, feels, and behaves, with a strong focus on serverless technologies and efficiency.",
   keywords: [
     "Back-End Developer",
     "Cloud Technologies",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MrUprizing",
     description:
-      "Back-End Developer focused on cloud technologies and AI-driven solutions. Building scalable, high-performance applications with serverless technologies and cloud architecture.",
+      "I like to build things for users and developers, thinking deeply about how the interface looks, feels, and behaves, with a strong focus on serverless technologies and efficiency.",
     url: "/",
     siteName: "MrUprizing",
     images: [
@@ -53,8 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MrUprizing - @MrUprizing",
-    description:
-      "Back-End Developer focused on cloud technologies and AI-driven solutions.",
+    description: "I like to build things for users and developers.",
     images: ["/og.png"],
   },
 };
