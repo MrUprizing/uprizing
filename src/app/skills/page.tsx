@@ -79,7 +79,8 @@ export default function Home() {
         {/*<DatabaseWithRestApi />*/}
         <Description className="pt-4">
           At last, but not least, I use <MyBadge icon={IconZed} title="Zed" />{" "}
-          IDE for creating awesome projects.
+          IDE for creating awesome projects, and I have a certified B2 level of
+          English.
         </Description>
         {/*<div className="my-6">
           <GlowingKeyboard
