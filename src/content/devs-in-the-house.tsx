@@ -12,7 +12,7 @@ import {
 } from "@/components/typography";
 
 export const metadata = {
-  title: "Devs in the House 2025",
+  title: "Google Devs in the House 2025",
   date: "11-08-2025",
   description:
     "A day immersed in AI and Google Cloud solutions. Here's what I learned.",
