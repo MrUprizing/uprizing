@@ -109,7 +109,7 @@ export default function Home() {
           <MyBadge icon={IconDynamo} title="DynamoDB" />
         </div>
 
-        <h3 className="text-muted-foreground pt-4">{`<Frameworks & more.../>`}</h3>
+        <h3 className="text-muted-foreground pt-4">{`<Frameworks & More.../>`}</h3>
         <div className="pt-2 flex gap-2 flex-wrap">
           <MyBadge icon={IconHono} title="Hono ❤️" />
           <MyBadge icon={IconElysia} title="ElysiaJs" />
