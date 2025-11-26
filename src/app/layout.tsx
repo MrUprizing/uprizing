@@ -22,10 +22,42 @@ const doto = Doto({
 });
 
 export const metadata: Metadata = {
-  title: "uprizing",
-  description: "Backend Developer, Cloud Developer, Api Architect",
+  metadataBase: new URL("https://uprizing.me"),
+  title: "UPRIZING",
+  description:
+    "Back-End Developer focused on cloud technologies and AI-driven solutions. Building scalable, high-performance applications with serverless technologies and cloud architecture.",
+  keywords: [
+    "Back-End Developer",
+    "Cloud Technologies",
+    "AI Solutions",
+    "Serverless",
+    "Next.js",
+    "GitHub",
+  ],
+  openGraph: {
+    title: "UPRIZING",
+    description:
+      "Back-End Developer focused on cloud technologies and AI-driven solutions. Building scalable, high-performance applications with serverless technologies and cloud architecture.",
+    url: "/",
+    siteName: "UPRIZING",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "UPRIZING - @MrUprizing",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UPRIZING - @MrUprizing",
+    description:
+      "Back-End Developer focused on cloud technologies and AI-driven solutions.",
+    images: ["/og.png"],
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

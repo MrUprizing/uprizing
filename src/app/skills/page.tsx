@@ -12,6 +12,7 @@ import {
   IconEcho,
   IconElysia,
   IconFiber,
+  IconFigma,
   IconFirecrawl,
   IconGcp,
   IconGitHub,
@@ -123,6 +124,7 @@ export default function Home() {
           <MyBadge icon={IconTurbo} title="Turborepo" />
           <MyBadge icon={IconNode} title="Node Js" />
           <MyBadge icon={IconResend} title="Resend ❤️" />
+          <MyBadge icon={IconFigma} title="Figma " />
         </div>
 
         <h3 className="text-muted-foreground pt-4">{`<AI/>`}</h3>

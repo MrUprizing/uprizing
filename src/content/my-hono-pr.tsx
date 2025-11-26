@@ -9,7 +9,7 @@ import {
 
 export const metadata = {
   title: "My Hono PR",
-  date: "09.08.2025",
+  date: "09-08-2025",
   description: "Why Developer Experience Trumps Technical Equivalence.",
   author: "Mr Uprizing",
 };

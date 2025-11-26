@@ -7,10 +7,10 @@ import {
 } from "@/components/typography";
 
 export const metadata = {
-  title: "OpenAPI: Letting My SDKs Build Themselves",
-  date: "10.02.2025",
+  title: "SDKs Build Themselves",
+  date: "05-10-2025",
   description:
-    "Why writing a good OpenAPI spec means you never have to write SDK code again. The client code writes itself.",
+    "Why writing a good API spec means you never have to write SDK code again. The client code writes itself.",
   author: "Mr Uprizing",
 };
 
@@ -81,10 +81,8 @@ export default function OpenAPISDKGenerators() {
   return (
     <>
       <Description>
-        I spent years writing SDKs by hand. Copying endpoints. Writing types.
-        Keeping them in sync with the server. It was honest work, but it was
-        tedious. Then I realized: if my API has a good OpenAPI spec, I don't
-        need to write the SDK at all. It can build itself.
+        If my API has a good OpenAPI spec, I don't need to write the SDK at all.
+        It can build itself.
       </Description>
 
       <Subtitle title="The pattern we all recognize" />

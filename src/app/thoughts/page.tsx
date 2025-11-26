@@ -33,7 +33,7 @@ export default async function BlogList() {
         return {
           slug,
           ...postMetadata,
-          sort: Number(postMetadata?.date?.replaceAll(".", "") || 0),
+          sort: Number(postMetadata?.date?.split("-").reverse().join("") || 0),
         };
       }),
   );

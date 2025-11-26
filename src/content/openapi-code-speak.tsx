@@ -7,10 +7,9 @@ import {
 } from "@/components/typography";
 
 export const metadata = {
-  title: "OpenAPI: Letting Code Speak",
-  date: "10.01.2025",
-  description:
-    "Why OpenAPI in Hono matters. It's not about automation. It's about honesty.",
+  title: "Code Speak",
+  date: "01-10-2025",
+  description: "Why OpenAPI in Hono matters.  It's about honesty.",
   author: "Mr Uprizing",
 };
 
@@ -51,9 +50,9 @@ export default function OpenAPIThoughts() {
   return (
     <>
       <Description>
-        I built an API with Hono + OpenAPI recently. Not because I needed
-        automation. But because I wanted the contract between server and client
-        to be honest. And it surprised me how much that changes things.
+        I built an API with Hono + OpenAPI recently. I wanted the contract
+        between server and client to be <WhiteSpan>honest</WhiteSpan>. And it
+        surprised me how much that changes things.
       </Description>
 
       <Subtitle title="The problem with APIs today" />
@@ -109,14 +108,6 @@ export default function OpenAPIThoughts() {
       <Description>
         One endpoint. Your entire API contract. Clients read it. Swagger UI
         renders it. Everything knows the truth.
-      </Description>
-
-      <Subtitle title="Not about automation" />
-
-      <Description>
-        I've read posts about OpenAPI as if it's a productivity feature:
-        "generate SDKs, save time, etc". Technically correct. But they miss the
-        point.
       </Description>
 
       <Description>

@@ -35,7 +35,12 @@ export default async function Page({
           <p className="text-muted-foreground mt-3 ">{metadata.description}</p>
         )}
         {metadata.author && (
-          <p className=" mt-1 text-xs font-mono">By: {metadata.author}</p>
+          <p className="mt-1 text-xs font-mono text-muted-foreground ">
+            By:{" "}
+            <span className="text-primary font-semibold">
+              {metadata.author}
+            </span>
+          </p>
         )}
       </header>
       <Post metadata={metadata} />

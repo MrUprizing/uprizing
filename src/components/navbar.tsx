@@ -43,7 +43,7 @@ export default function Navbar() {
         <Item href="/work">Work</Item>
         <Item href="/skills">Skills</Item>
         <Item href="/thoughts">Thoughts</Item>
-        <hr className="border-t border-dashed  mb-4 mt-4 sm:-mx-1" />
+        <hr className="border-t border-dashed border mb-4 mt-4 sm:-mx-1" />
         {/*<DialogNavbar />*/}
         <ThemeToggle />
       </ul>
