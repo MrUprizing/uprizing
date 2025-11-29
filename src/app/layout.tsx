@@ -5,6 +5,7 @@ import { ViewTransitions } from "next-view-transitions";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -100,6 +101,7 @@ export default function RootLayout({
               </div>
             </div>
           </ThemeProvider>
+          <Analytics />
         </body>
       </html>
     </ViewTransitions>
