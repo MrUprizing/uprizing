@@ -31,6 +31,7 @@ import {
   IconResend,
   IconShadcn,
   IconSql,
+  IconSQLite,
   IconSST,
   IconSupabase,
   IconSvelte,
@@ -79,26 +80,9 @@ export default function Home() {
         {/*<DatabaseWithRestApi />*/}
         <Description className="pt-4">
           At last, but not least, I use <MyBadge icon={IconZed} title="Zed" />{" "}
-          IDE for creating awesome projects, and I have a certified B2 level of
+          IDE for creating awesome projects, and I have a certified B2+ level of
           English.
         </Description>
-        {/*<div className="my-6">
-          <GlowingKeyboard
-            glowColor="#38bdf8"
-            highlight={[
-              {
-                startRow: 2,
-                startIndex: 1,
-                text: ["F", "O", "L", "L", "O", "W", "", "M", "E"],
-              },
-              {
-                startRow: 3,
-                startIndex: 2,
-                text: ["U", "P", "R", "I", "Z", "I", "N", "G"],
-              },
-            ]}
-          />
-        </div>*/}
         <h3 className="text-muted-foreground pt-4">{`<Core/>`}</h3>
         <div className="pt-2 flex gap-2">
           <MyBadge icon={IconTypescript} title="TypeScript" />
@@ -126,6 +110,14 @@ export default function Home() {
           <MyBadge icon={IconNode} title="Node Js" />
           <MyBadge icon={IconResend} title="Resend ❤️" />
           <MyBadge icon={IconFigma} title="Figma " />
+        </div>
+
+        <h3 className="text-muted-foreground pt-4">{`<Database/>`}</h3>
+        <div className="pt-2 flex gap-2">
+          <MyBadge icon={IconPostgres} title="PostgreSQL" />
+          <MyBadge icon={IconSQLite} title="SQLite" />
+          <MyBadge icon={IconRedis} title="Redis" />
+          <MyBadge icon={IconDynamo} title="DynamoDB" />
         </div>
 
         <h3 className="text-muted-foreground pt-4">{`<AI/>`}</h3>

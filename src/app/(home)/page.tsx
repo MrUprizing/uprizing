@@ -18,20 +18,22 @@ export default function Page() {
         </Link>
       </div>
       <Description>
-        I am a <WhiteSpan> Back-End Developer </WhiteSpan> with a strong focus
-        on cloud technologies and AI-driven solutions. My experience spans{" "}
-        <WhiteSpan> cloud architecture, </WhiteSpan> backend systems, and the
-        development of software that integrates{" "}
-        <WhiteSpan> artificial intelligence </WhiteSpan> to deliver scalable,
-        high-performance applications.
+        I am a <WhiteSpan> Back-End Developer </WhiteSpan> focused on{" "}
+        <WhiteSpan> cloud </WhiteSpan> and
+        <WhiteSpan> AI-driven </WhiteSpan> solutions. I work on cloud
+        architecture, backend platforms, and software that uses AI to build
+        scalable, <WhiteSpan> high-performance </WhiteSpan> applications.
       </Description>
       <Description className="pt-4">
         I like to build things for <WhiteSpan> users </WhiteSpan> and
-        <WhiteSpan> developers </WhiteSpan>, thinking deeply about how the
-        interface looks, feels, and behaves, with a strong focus on{" "}
-        <WhiteSpan> serverless </WhiteSpan>
-        technologies and efficiency. The <WhiteSpan> Front-End </WhiteSpan> is
-        my hobby. Check out my latest project{" "}
+        <WhiteSpan> developers </WhiteSpan>, thinking deeply about how they
+        look, feel, and behave, always keeping the{" "}
+        <WhiteSpan> developer experience </WhiteSpan> in mind with clean, simple
+        abstractions. I specialize in <WhiteSpan> serverless </WhiteSpan>{" "}
+        technologies and focus heavily on <WhiteSpan> efficiency </WhiteSpan>{" "}
+        and <WhiteSpan> scalability </WhiteSpan>. The{" "}
+        <WhiteSpan> Front-End </WhiteSpan> is my hobby. Check out my latest
+        project{" "}
         <CustomLink href="https://auth.uprizing.me/" _blank>
           Auth CN.
         </CustomLink>
