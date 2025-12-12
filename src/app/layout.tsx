@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://uprizing.me"),
   title: "Mr Uprizing",
   description:
-    "I like to build things for users and developers, thinking deeply about how the interface looks, feels, and behaves, with a strong focus on serverless technologies and efficiency.",
+    "I like to build things for users and developers , thinking deeply about how they look, feel, and behave, always keeping the developer experience.",
   keywords: [
     "Back-End Developer",
     "Cloud Technologies",

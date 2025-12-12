@@ -77,7 +77,6 @@ export default function Home() {
           <MyBadge icon={IconSvelte} title="Svelte" /> with{" "}
           <MyBadge icon={IconTailwind} title="Tailwind" /> CSS.
         </Description>
-        {/*<DatabaseWithRestApi />*/}
         <Description className="pt-4">
           At last, but not least, I use <MyBadge icon={IconZed} title="Zed" />{" "}
           IDE for creating awesome projects, and I have a certified B2+ level of
@@ -88,9 +87,6 @@ export default function Home() {
           <MyBadge icon={IconTypescript} title="TypeScript" />
           <MyBadge icon={IconGo} title="Go" />
           <MyBadge icon={IconSql} title="SQL" />
-          <MyBadge icon={IconPostgres} title="PostgreSQL" />
-          <MyBadge icon={IconRedis} title="Redis" />
-          <MyBadge icon={IconDynamo} title="DynamoDB" />
         </div>
 
         <h3 className="text-muted-foreground pt-4">{`<Frameworks & More.../>`}</h3>
