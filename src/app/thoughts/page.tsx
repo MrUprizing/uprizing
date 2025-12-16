@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
 import { TextScramble } from "@/components/ui/text-scramble";
 
@@ -13,10 +12,6 @@ interface PostMetadata {
 interface PostComponent {
   metadata: PostMetadata;
 }
-
-export const metadata: Metadata = {
-  title: "Thoughts - uprizing",
-};
 
 export default async function BlogList() {
   const contentDirectory = path.join(process.cwd(), "src/content");

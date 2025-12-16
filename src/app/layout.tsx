@@ -90,7 +90,7 @@ export default function RootLayout({
               <div className="flex flex-col sm:flex-row">
                 <Navbar />
                 <main className="relative flex-1 max-w-2xl">
-                  <div className="absolute w-full h-px bg-border right-0 sm:right-auto sm:left-0 sm:w-px sm:h-full" />
+                  <div className="absolute w-full h-px border-r border-dashed right-0 sm:right-auto sm:left-0 sm:w-px sm:h-full" />
                   <article
                     style={{ viewTransitionName: "crossfade" }}
                     className="pl-0 pt-6 sm:pt-0 sm:pl-6 md:pl-10 lg:pl-14"
