@@ -66,13 +66,23 @@ export async function generateMetadata({
         title: postMeta.title || slug,
         description: postMeta.description || "",
         type: "article",
+        url: `/thoughts/${slug}`,
         publishedTime: postMeta.date,
         authors: postMeta.author ? [postMeta.author] : undefined,
+        images: [
+          {
+            url: "/og-thoughts.png",
+            width: 1200,
+            height: 630,
+            alt: postMeta.title || slug,
+          },
+        ],
       },
       twitter: {
         card: "summary_large_image",
         title: postMeta.title || slug,
         description: postMeta.description || "",
+        images: ["/og-thoughts.png"],
       },
     };
   } catch (_error) {
