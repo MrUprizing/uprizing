@@ -15,7 +15,7 @@ export const metadata = {
   title: "Yuno NextGen Hackathon",
   date: "16-12-2025",
   description:
-    "24 hours to solve the payment integration problem nobody wanted to touch",
+    "24 hours to solve the payment integration problem nobody wanted to touch.",
   author: "Mr Uprizing",
 };
 
@@ -25,10 +25,13 @@ export default function YunoNextGenHackathon() {
       <ImageComponent src="/yuno-01.webp" alt="Yuno" width={900} height={600} />
       <Description className="pt-4">
         We recently participated in the{" "}
-        <CustomLink href="#">Yuno NextGen Hackathon</CustomLink>. They gave us
-        several challenges to choose from. One caught our attention:{" "}
-        <WhiteSpan>the SDK was a mess</WhiteSpan>. We picked it. 24 hours later,
-        we had a solution that changed how we think about payment integration.
+        <CustomLink href="https://yuno-hackathon-nextgen-internship.vercel.app/">
+          Yuno NextGen Hackathon
+        </CustomLink>
+        . They gave us several challenges to choose from. One caught our
+        attention: <WhiteSpan>the SDK was a mess</WhiteSpan>. We picked it. 24
+        hours later, we had a solution that changed how we think about payment
+        integration.
       </Description>
 
       <Subtitle title="The Challenge We Chose" />
@@ -233,6 +236,16 @@ export default function Page() {
         Our thanks to the Yuno team for the opportunity to collaborate on
         something that truly impacts their merchants. Hackathons like this are
         where the magic happens.
+      </Paragraph>
+
+      <Subtitle title="Why Hackathons Are Genius for Talent Discovery" />
+      <Paragraph>
+        Participating in this hackathon showed me why companies should do more
+        of these. In 24 hours, you see how people really think under pressure.
+        No resumes. No interviews. Just real problems, real solutions, and real
+        collaboration.{" "}
+        <WhiteSpan>This is how you find your best talent</WhiteSpan>. Yuno
+        nailed it. More companies should adopt this approach to hiring.
       </Paragraph>
 
       <ContainerLinks
