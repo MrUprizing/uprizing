@@ -238,14 +238,14 @@ export default function Page() {
         where the magic happens.
       </Paragraph>
 
-      <Subtitle title="Why Hackathons Are Genius for Talent Discovery" />
+      <Subtitle title="Yuno's Genius: Using Hackathons to Find Talent" />
       <Paragraph>
-        Participating in this hackathon showed me why companies should do more
-        of these. In 24 hours, you see how people really think under pressure.
-        No resumes. No interviews. Just real problems, real solutions, and real
-        collaboration.{" "}
-        <WhiteSpan>This is how you find your best talent</WhiteSpan>. Yuno
-        nailed it. More companies should adopt this approach to hiring.
+        Participating in this hackathon showed me something brilliant about how
+        Yuno recruits. In 24 hours, you see how people really think under
+        pressure. No resumes. No interviews. Just real problems, real solutions,
+        and real collaboration.{" "}
+        <WhiteSpan>This is how you find your best talent</WhiteSpan>. More
+        companies should steal this strategy.
       </Paragraph>
 
       <ContainerLinks
