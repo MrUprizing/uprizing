@@ -1,19 +1,19 @@
 "use client";
 
-import React, { forwardRef, useRef } from "react";
 import {
-  Wand2,
-  Code2,
   Cloud,
+  Code2,
   Globe,
-  Smartphone,
   Monitor,
   ShoppingCart,
+  Smartphone,
+  Wand2,
 } from "lucide-react";
-
-import { cn } from "@/lib/utils";
-import { AnimatedBeam } from "@/components/ui/animated-beam";
+import type React from "react";
+import { forwardRef, useRef } from "react";
 import { IconYuno } from "@/assets";
+import { AnimatedBeam } from "@/components/ui/animated-beam";
+import { cn } from "@/lib/utils";
 
 const Circle = forwardRef<
   HTMLDivElement,

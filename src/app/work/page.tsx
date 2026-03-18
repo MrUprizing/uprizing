@@ -9,7 +9,7 @@ export default function Component() {
     <div>
       <div className="flex items-baseline">
         <div className="title-transition font-doto font-extrabold text-2xl">
-          Work
+          WORK
         </div>
         <div className="font-mono ml-4 font-normal text-sm text-muted hover:text-primary transition-colors duration-200">
           My timeline with 22 years old :)

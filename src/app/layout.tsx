@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Doto, Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { ViewTransitions } from "next-view-transitions";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

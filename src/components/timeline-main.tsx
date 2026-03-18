@@ -11,40 +11,34 @@ import {
 
 const items = [
   {
-    date: "2020",
-    description: "My firsts lines of code.",
-    id: 1,
-    title: "Secondary School",
-  },
-  {
     date: "2023 - 2024",
     description: "Backend Developer.",
-    id: 2,
+    id: 1,
     title: "Transportes ERAP",
   },
   {
     date: "2024",
     description: "European Hackathons.",
-    id: 3,
+    id: 2,
     title: "2 Hackathons Winner",
   },
   {
     date: "2024 - 2025",
     description: "Open source contributions.",
-    id: 4,
+    id: 3,
     title: "Open source Projects",
   },
   {
     date: "2025",
-    description: "Components Auth System.",
-    id: 5,
-    title: "Auth CN",
+    description: "Full-stack Developer.",
+    id: 4,
+    title: "Kebo",
   },
 ];
 
 export default function TimelineMain() {
   return (
-    <Timeline className="mt-3" defaultValue={5} orientation="horizontal">
+    <Timeline className="mt-3" defaultValue={4} orientation="horizontal">
       {items.map((item) => (
         <TimelineItem key={item.id} step={item.id}>
           <TimelineHeader>
