@@ -161,79 +161,70 @@ const contributions = [
     title: "shadcn/ui",
     stars: "109k",
     href: "https://github.com/shadcn-ui/ui",
-    subtitle: "Fixed navigation menu docs",
-  },
-  {
-    title: "shadcn/ui",
-    stars: "109k",
-    href: "https://github.com/shadcn-ui/ui",
-    subtitle: "Fixed broken link in registry docs",
+    subtitle:
+      "React component library built on Radix UI and Tailwind CSS for building modern UIs",
   },
   {
     title: "Better Auth",
     stars: "27k",
     href: "https://github.com/better-auth/better-auth",
-    subtitle: "Fixed missing import headers in docs",
-  },
-  {
-    title: "Better Auth",
-    stars: "27k",
-    href: "https://github.com/better-auth/better-auth",
-    subtitle: "Fixed wrong env variable name in example",
+    subtitle:
+      "Modern authentication framework with OAuth support and secure session management",
   },
   {
     title: "Vercel AI SDK",
     stars: "22k",
     href: "https://github.com/vercel/ai",
-    subtitle: "Fixed incorrect tool parameter in docs",
+    subtitle:
+      "TypeScript SDK for integrating AI models and LLMs into web applications",
   },
   {
     title: "SST",
     stars: "25k",
     href: "https://github.com/anomalyco/sst",
-    subtitle: "Fixed example project naming",
+    subtitle:
+      "Framework for building and deploying serverless applications on AWS with TypeScript",
   },
   {
     title: "useSend",
     stars: "4k",
     href: "https://github.com/usesend/useSend",
-    subtitle: "Fixed local dev link in README",
+    subtitle: "AWS SES wrapper",
   },
   {
     title: "IntentUI",
     stars: "1.9k",
     href: "https://github.com/intentui/intentui",
-    subtitle: "Improved color swatch types",
+    subtitle:
+      "Design system and UI components focused on accessibility and user intent",
   },
   {
     title: "Better Auth UI",
     stars: "1.5k",
     href: "https://github.com/better-auth-ui/better-auth-ui",
-    subtitle: "Fixed syntax error",
+    subtitle:
+      "Pre-built authentication UI components for Better Auth integration",
   },
   {
     title: "Zed",
     stars: "1.5k",
     href: "https://github.com/zed-industries/extensions",
-    subtitle: "Added shadcn MCP extension",
-  },
-  {
-    title: "Zed",
-    stars: "1.5k",
-    href: "https://github.com/zed-industries/extensions",
-    subtitle: "Added Next.js DevTools MCP extension",
+    subtitle:
+      "High-performance code editor with extension support and collaborative features",
   },
   {
     title: "Vercel SWR",
     stars: "506",
     href: "https://github.com/vercel/swr-site",
-    subtitle: "Added Spanish translation",
+    subtitle:
+      "React library for data fetching with intelligent caching and automatic revalidation",
   },
   {
     title: "Hono",
     stars: "158",
     href: "https://github.com/honojs/website",
-    subtitle: "Improved client typing docs",
+    subtitle:
+      "Ultralight web framework for building REST APIs with Cloudflare Workers support",
   },
 ];
 
